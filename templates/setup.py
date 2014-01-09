@@ -7,7 +7,7 @@ from importlib import import_module
 
 
 def name():
-    return 'setupbuilder'
+    return '%(project)s'
 
 
 def version():
@@ -26,18 +26,12 @@ def version():
 setup(
     version=version(),
     name=name(),
-    description='Command to generate setup for python packages.',
+    description='Simples description.',
     long_description='',
-    author='Rodrigo Pinheiro Matias',
-    author_email='rodrigopmatias@gmail.com',
-    url='http://pypi.python.org/setupbuilder',
+    author='Author name',
+    author_email='Author public email',
+    url='http://pypi.python.org/%(project)s',
     package_dir={'': 'src'},
     packages=find_packages('src'),
-    install_requires=['setuptools'],
-    entry_points={
-        'console_scripts': [
-            'setupbuilder = setupbuilder:main',
-            'setupcompress = setupbuilder:data_compress',
-        ]
-    }
+    install_requires=[],
 )
