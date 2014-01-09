@@ -28,6 +28,8 @@ setup(
     name=name(),
     description='Command to generate setup for python packages.',
     long_description='',
+    license='GPLv3',
+    platforms=['linux', 'linux2', 'osx', 'win32', 'win64'],
     author='Rodrigo Pinheiro Matias',
     author_email='rodrigopmatias@gmail.com',
     url='http://pypi.python.org/setupbuilder',
