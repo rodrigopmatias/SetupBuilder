@@ -7,7 +7,7 @@ from importlib import import_module
 
 
 def name():
-    return '%(project)s'
+    return '%(project_name)s'
 
 
 def version():
